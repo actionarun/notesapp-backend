@@ -11,7 +11,7 @@ const app = express();
 
 connectDB();
 
- app.use(cors({ origin: "https://notes-appfrontend.netlify.app", credentials: true }));
+ app.use(cors({ origin: "https://notesappfrontend.netlify.app", credentials: true }));
 app.use(express.json());
 
 app.get("/", (req, res) => res.json({ message: "Notes App API running" }));
